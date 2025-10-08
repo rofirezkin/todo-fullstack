@@ -88,7 +88,3 @@ yarn start
 - 🎯 Filter: All / Active / Completed
 
 ---
-
-## 📜 License
-
-MIT License © 2025
