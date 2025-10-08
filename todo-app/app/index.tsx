@@ -92,6 +92,14 @@ export default function Index() {
 
       {isLoading ? (
         <Text>Loading...</Text>
+      ) : filteredTodos.length === 0 ? (
+        <View style={styles.emptyContainer}>
+          <Ionicons name="clipboard-outline" size={64} color="#aaa" />
+          <Text style={styles.emptyText}>No todos found</Text>
+          <Text style={styles.emptySubText}>
+            Tap the + button below to create your first todo!
+          </Text>
+        </View>
       ) : (
         <FlatList
           data={[...filteredTodos].reverse()}
@@ -158,5 +166,23 @@ const styles = StyleSheet.create({
   activeFilter: {
     color: "#4630EB",
     fontWeight: "bold",
+  },
+  emptyContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
+  },
+  emptyText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginTop: 10,
+    color: "#333",
+  },
+  emptySubText: {
+    fontSize: 14,
+    color: "#777",
+    marginTop: 4,
+    textAlign: "center",
   },
 });
