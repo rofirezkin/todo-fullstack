@@ -1,0 +1,92 @@
+# ------------------------
+# Dependencies
+# ------------------------
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# ------------------------
+# Build outputs
+# ------------------------
+dist/
+build/
+tmp/
+temp/
+.nyc_output/
+coverage/
+web-build/
+expo-env.d.ts
+
+# ------------------------
+# Expo / React Native
+# ------------------------
+.expo/
+.expo-shared/
+.expo/*
+/ios
+/android
+.metro/
+.metro-health-check*
+
+# React Native generated
+*.keystore
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# ------------------------
+# Logs
+# ------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------
+# Environment
+# ------------------------
+
+.env.*.local
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# ------------------------
+# OS files
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# IDEs / Editors
+# ------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+
+# ------------------------
+# Misc
+# ------------------------
+*.tsbuildinfo
+*.orig.*
+*.pid
+*.seed
+*.pid.lock
+*.pem
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
